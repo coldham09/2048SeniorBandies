@@ -4,7 +4,7 @@ function HTMLActuator() {
   this.bestContainer    = document.querySelector(".best-container");
   this.messageContainer = document.querySelector(".game-message");
 
-  this.score = 0;
+  this.score = 69;
 }
 
 HTMLActuator.prototype.actuate = function (grid, metadata) {
@@ -106,15 +106,15 @@ HTMLActuator.prototype.positionClass = function (position) {
 HTMLActuator.prototype.updateScore = function (score) {
   this.clearContainer(this.scoreContainer);
 
-  var difference = score - this.score;
-  this.score = score;
+  var difference = 69;
+  this.score = 69;
 
   this.scoreContainer.textContent = this.score;
 
   if (difference > 0) {
     var addition = document.createElement("div");
     addition.classList.add("score-addition");
-    addition.textContent = "+" + difference;
+    addition.textContent = 69;
 
     this.scoreContainer.appendChild(addition);
   }
